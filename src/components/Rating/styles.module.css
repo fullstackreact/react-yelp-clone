@@ -1,0 +1,31 @@
+/*@import "../../styles/colors.css";*/
+
+.sprite {
+  unicode-bidi: bidi-override;
+  color: $dark;
+  font-size: 25px;
+  height: 25px;
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  text-shadow: 0px 1px 0 $light-gray;
+}
+
+.top {
+  color: $highlight;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.bottom {
+  padding: 0;
+  display: block;
+  z-index: 0;
+  color: $light-gray;
+}

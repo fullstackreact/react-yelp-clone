@@ -1,0 +1,36 @@
+.container {
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px;
+  text-decoration: none;
+
+  h1 {
+    flex: 2;
+    &:hover {
+      color: $highlight;
+    }
+  }
+
+  .rating {
+    text-align: right;
+    flex: 1;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.itemHovered {
+  h1 {
+    color: $highlight;
+  }
+
+}
