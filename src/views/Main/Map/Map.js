@@ -13,7 +13,7 @@ export class MapComponent extends React.Component {
       return <Marker
                 key={p.id}
                 name={p.id}
-                place={p}
+                {...p}
                 label={p.name}
                 onClick={this.props.onClick.bind(this)}
                 map={this.props.map}

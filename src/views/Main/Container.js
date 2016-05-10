@@ -44,9 +44,8 @@ export class Container extends React.Component {
   onMapMove() {
   }
 
-  onMarkerClick(item) {
+  onMarkerClick(place) {
     const {push} = this.context.router;
-    const {place} = item;
     push(`/map/detail/${place.place_id}`)
   }
 
