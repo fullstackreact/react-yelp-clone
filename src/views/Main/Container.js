@@ -29,7 +29,7 @@ export class Container extends React.Component {
       {
         location: map.center,
         radius: '500',
-        type: ['food']
+        types: ['cafe']
       }
     ).then((results, pagination) => {
       this.setState({
@@ -78,7 +78,6 @@ export class Container extends React.Component {
               places={this.state.places} />
 
           <div className={styles.content}>
-            {children}
           </div>
 
         </Map>

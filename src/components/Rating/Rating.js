@@ -1,5 +1,3 @@
-<div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
-
 import React, { PropTypes as T } from 'react'
 
 import styles from './styles.module.css';
@@ -8,8 +6,9 @@ const RatingIcon = (props) => (<span>★</span>)
 
 export class Rating extends React.Component {
   render() {
+    const {percentage} = this.props;
     const style = {
-      width: `${this.props.percentage * 100}%`
+      width: `${(percentage || 0) * 100}%`
     }
     return (
       <div className={styles.sprite}>

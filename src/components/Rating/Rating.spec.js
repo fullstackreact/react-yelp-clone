@@ -1,8 +1,6 @@
 import React from 'react'
-import { expect } from 'chai'
-import sinon from 'sinon'
-import TestUtils from 'react-addons-test-utils'
-import { shallow, mount, render } from 'enzyme'
+import {expect} from 'chai'
+import {shallow} from 'enzyme'
 
 import Rating from './Rating'
 import styles from './styles.module.css';

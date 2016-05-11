@@ -7,16 +7,14 @@ import styles from './styles.module.css'
 
 describe('<Listing />', () => {
   let wrapper;
-  const places = [
-    {
-      name: 'bob'
-    },
-    {
-      name: "O'Hare"
-    }
-  ]
+  const places = [{
+    name: 'Chicago'
+  }, {
+    name: "San Francisco"
+  }];
   beforeEach(() => {
-    wrapper = shallow(<Listing places={places} />)
+    wrapper = shallow(<Listing title={'Cafes'}
+                      places={places} />)
   });
 
   it('wraps the component in a listing css class', () => {

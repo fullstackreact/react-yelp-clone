@@ -1,3 +1,5 @@
+@import url("styles/colors.css");
+
 *,
 *:after,
 *:before {
@@ -11,7 +13,7 @@
 }
 
 body {
-  color: $dark;
+  color: var(--dark);
   font-weight: lighter;
   font: 400 15px/22px 'Open Sans', 'Helvetica Neue', Sans-serif;
   font-smoothing: antialiased;

@@ -26,7 +26,8 @@ export class Item extends React.Component {
         [styles.itemHovered]: this.state.hovered
       })}>
           <h1 className={classnames(styles.title)}>{place.name}</h1>
-          <Rating className={styles.rating} percentage={(place.rating/5)} />
+          <Rating className={styles.rating}
+                  percentage={(place.rating/5)} />
       </div>
     )
   }

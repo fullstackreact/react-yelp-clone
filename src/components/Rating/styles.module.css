@@ -1,19 +1,19 @@
-/*@import "../../styles/colors.css";*/
+@import "../../styles/colors.css";
 
 .sprite {
   unicode-bidi: bidi-override;
-  color: $dark;
+  color: var(--dark);
   font-size: 25px;
   height: 25px;
   width: 100px;
   margin: 0 auto;
   position: relative;
   padding: 0;
-  text-shadow: 0px 1px 0 $light-gray;
+  text-shadow: 0px 1px 0 var(--light-gray);
 }
 
 .top {
-  color: $highlight;
+  color: var(--highlight);
   padding: 0;
   position: absolute;
   z-index: 1;
@@ -27,5 +27,5 @@
   padding: 0;
   display: block;
   z-index: 0;
-  color: $light-gray;
+  color: var(--light-gray);
 }
