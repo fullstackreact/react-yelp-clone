@@ -12,6 +12,11 @@ export function searchNearby(google, map, request) {
     })
   });
 }
+/*
+ * getDetails
+ *
+ * Get details from the Google API about one specific place.
+ */
 export function getDetails(google, map, placeId) {
   return new Promise((resolve, reject) => {
     const service = new google.maps.places.PlacesService(map);

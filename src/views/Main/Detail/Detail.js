@@ -36,13 +36,13 @@ export class Detail extends React.Component {
   renderPhotos(place) {
     if (!place.photos || place.photos.length == 0) return;
 
+    const cfg = {maxWidth: 100, maxHeight: 100}
     return (<div className={styles.photoStrip}>
-            {place.photos && place.photos.map(p => {
-              const url = p.getUrl({maxWidth: 100, maxHeight: 100}) + '.png'
-              return (<img key={url}
-                      src={url} />)
-            })}
-            </div>)
+      {place.photos.map(p => {
+        const url = `${p.getUrl(cfg)}.png`
+        return (<img key={url} src={url} />)
+      })}
+    </div>)
   }
 
   getDetails(map) {
@@ -69,18 +69,6 @@ export class Detail extends React.Component {
     });
   }
 
-  renderPhotos(place) {
-    if (!place.photos || place.photos.length == 0) return;
-
-    return (<div className={styles.photoStrip}>
-            {place.photos && place.photos.map(p => {
-              const url = p.getUrl({maxWidth: 100, maxHeight: 100}) + '.png'
-              return (<img key={url}
-                      src={url} />)
-            })}
-            </div>)
-  }
-
 
   render() {
     if (this.state.loading) {
@@ -92,9 +80,9 @@ export class Detail extends React.Component {
     const {place} = this.state;
 
     return (
-      <div className={styles.map}>
+      <div className={styles.wrapper}>
         <div className={styles.header}>
-          <h2>{this.state.place.name}</h2>
+          <h2>{place.name}</h2>
         </div>
         <div className={styles.details}>
           {this.renderPhotos(place)}

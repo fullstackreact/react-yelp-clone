@@ -41,11 +41,11 @@ export class Container extends React.Component {
     })
   }
 
-  onMapMove() {
-  }
+  onMapMove() {}
 
-  onMarkerClick(place) {
+  onMarkerClick(item) {
     const {push} = this.context.router;
+    const {place} = item;
     push(`/map/detail/${place.place_id}`)
   }
 
@@ -53,13 +53,12 @@ export class Container extends React.Component {
     let children = null;
     if (this.props.children) {
       children = React.cloneElement(this.props.children, {
-        map: this.props.map || this.map,
         google: this.props.google,
         places: this.state.places,
         loaded: this.props.loaded,
         router: this.context.router,
         onMove: this.onMapMove.bind(this),
-        onClick: this.onMarkerClick.bind(this),
+        onMarkerClick: this.onMarkerClick.bind(this),
         zoom: this.props.zoom
       })
     }
@@ -78,6 +77,7 @@ export class Container extends React.Component {
               places={this.state.places} />
 
           <div className={styles.content}>
+            {children}
           </div>
 
         </Map>

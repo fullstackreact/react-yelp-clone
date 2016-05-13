@@ -55,4 +55,12 @@ export class MapComponent extends React.Component {
   }
 }
 
+MapComponent.propTypes = {
+  onClick: T.func
+}
+const identity = (...a) => a;
+MapComponent.defaultProps = {
+  onClick: identity
+}
+
 export default MapComponent

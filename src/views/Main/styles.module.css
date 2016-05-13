@@ -1,4 +1,5 @@
 @import url("../../styles/base.css");
+@import url("../../styles/queries.css");
 
 .wrapper {
   overflow-y: scroll;
@@ -8,11 +9,23 @@
   height: 100vh;
   -webkit-box-orient: horizontal;
   -o-box-orient: horizontal;
+
+  flex-direction: column;
+
+  @media (--screen-phone-lg) {
+    flex-direction: row;
+  }
+
 }
 
 .content {
   position: relative;
   flex: 2;
   top: var(--topbar-height);
-  order: 2;
+  left: 0;
+  order: 1;
+
+  @media (--screen-phone-lg) {
+    order: 2;
+  }
 }

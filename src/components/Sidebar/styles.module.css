@@ -1,4 +1,5 @@
 @import url("../../styles/base.css");
+@import url("../../styles/queries.css");
 
 .sidebar {
   height: 100%;
@@ -9,6 +10,15 @@
   position: relative;
   flex: 1;
   z-index: 0;
+
+  flex-direction: column;
+  order: 2;
+  display: none;
+  @media (--screen-phone-lg) {
+    display: block;
+    flex-direction: row;
+    order: 1;
+  }
 
   .heading {
     flex: 1;

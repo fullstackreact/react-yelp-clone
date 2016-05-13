@@ -1,16 +1,6 @@
 @import url("../../../styles/base.css");
+@import url("../../../styles/colors.css");
 @import url("../../../styles/queries.css");
-
-.wrapper {
-  z-index: 10;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
 
 .flex {
   display: flex;
@@ -19,44 +9,38 @@
   width: 100%;
   -webkit-box-orient: horizontal;
   -o-box-orient: horizontal;
-  align-items: center;
 
-  flex-direction: row;
+  flex-direction: column;
 
-  @media (--screen-sm) {
-    flex-direction: column;
+  @media (--screen-phone-lg) {
+    flex-direction: row;
   }
 }
 
-
 .header {
-  composes: flex;
-  padding: var(--padding);
+  padding: 0 var(--padding);
   h2 {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 }
 
 .details {
   composes: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  padding: 0 var(--padding);
 
   ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-  }
-  /* optional: show position indicator in red */
-  ::-webkit-scrollbar-thumb {
+    width: 0px;
+    background: transparent;
   }
 
   .photoStrip {
     flex: 1;
     display: flex;
     overflow: auto;
-
     img {
-      min-height: min-content; /* needs vendor prefixes */
-      display: flex;
+      margin: 0 1px;
     }
   }
 }
