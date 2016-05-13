@@ -9,10 +9,6 @@ import Sidebar from 'components/Sidebar/Sidebar'
 import styles from './styles.module.css'
 
 export class Container extends React.Component {
-  static contextTypes = {
-    router: T.object
-  }
-
   constructor(props, context) {
     super(props, context);
 
@@ -83,6 +79,10 @@ export class Container extends React.Component {
         </Map>
     )
   }
+}
+
+Container.contextTypes = {
+  router: T.object
 }
 
 export default GoogleApiWrapper({

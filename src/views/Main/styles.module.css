@@ -20,12 +20,14 @@
 
 .content {
   position: relative;
-  flex: 2;
   top: var(--topbar-height);
   left: 0;
+
+  flex: 1;
   order: 1;
 
   @media (--screen-phone-lg) {
+    flex: 2;
     order: 2;
   }
 }

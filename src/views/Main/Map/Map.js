@@ -13,9 +13,9 @@ export class MapComponent extends React.Component {
       return <Marker
                 key={p.id}
                 name={p.id}
-                {...p}
+                place={p}
                 label={p.name}
-                onClick={this.props.onClick.bind(this)}
+                onClick={this.props.onMarkerClick.bind(this)}
                 map={this.props.map}
                 position={p.geometry.location} />
     });
@@ -56,11 +56,11 @@ export class MapComponent extends React.Component {
 }
 
 MapComponent.propTypes = {
-  onClick: T.func
+  onMarkerClick: T.func
 }
 const identity = (...a) => a;
 MapComponent.defaultProps = {
-  onClick: identity
+  onMarkerClick: identity
 }
 
 export default MapComponent

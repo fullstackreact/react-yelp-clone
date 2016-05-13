@@ -12,9 +12,9 @@
 
   flex-direction: column;
 
-  @media (--screen-phone-lg) {
+  /*@media (--screen-phone-lg) {
     flex-direction: row;
-  }
+  }*/
 }
 
 .header {

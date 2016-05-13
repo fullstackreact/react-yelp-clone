@@ -8,16 +8,17 @@
   overflow: hidden;
 
   position: relative;
-  flex: 1;
   z-index: 0;
 
   flex-direction: column;
   order: 2;
-  display: none;
+  flex: 1;
+
   @media (--screen-phone-lg) {
     display: block;
     flex-direction: row;
     order: 1;
+    flex: 1;
   }
 
   .heading {
