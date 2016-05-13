@@ -20,7 +20,19 @@ const dest    = join(root, 'dist');
 var config = getConfig({
   isDev: isDev,
   in: join(src, 'app.js'),
-  out: dest
+  out: dest,
+  html: function (context) {
+    return {
+      'index.html': context.defaultTemplate({
+        title: 'yelp-clone from fullstackreact.com',
+        publicPath: isDev ? 'http://localhost:3000/' : '',
+        meta: {
+          'name': 'fullstackreact yelp clone',
+          'description': 'A minimal yelp clone from the team behind the fullstackreact.com book'
+        }
+      })
+    }
+  }
 });
 
 // ENV variables
@@ -95,6 +107,8 @@ config.resolve.alias = {
   'styles': join(src, 'styles')
 }
 // end Roots
+
+// console.log(require('prettyjson').render(config));
 
 // Testing
 if (isTest) {
