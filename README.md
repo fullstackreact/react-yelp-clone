@@ -1,10 +1,12 @@
 ## Yelp clone
 
+TLDR: [demo](http://fullstackio.github.io/yelp-clone)
+
 This repository is the main repo for the app discussed and built in great detail at the [fullstackreact /blog](https://fullstackreact.com/blog). For an in-depth discussion, check out the post.
 
 ## Getting yelp up and running
 
-Getting the app up and running is straight-forward. Clone the repo, install the dependencies, and run the start script, as follows:
+Getting the app up and running is straight-forward. Clone the repo, install the dependencies, and run the start script.
 
 ### Cloning the repo:
 
