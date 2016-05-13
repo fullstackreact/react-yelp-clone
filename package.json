@@ -4,6 +4,9 @@
   "description": "",
   "scripts": {
     "start": "NODE_ENV=development ./node_modules/.bin/hjs-dev-server",
+    "prepublish": ". ./scripts/prepublish.sh",
+    "build": "NODE_ENV=production webpack",
+    "publish_pages": "gh-pages -d public/",
     "test": "NODE_ENV=test ./node_modules/karma/bin/karma start karma.conf.js",
     "test:watch": "npm run test -- --watch"
   },
@@ -13,6 +16,7 @@
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.7.7",
     "babel-loader": "^6.2.4",
+    "babel-plugin-transform-es2015-modules-umd": "^6.8.0",
     "babel-polyfill": "^6.7.4",
     "babel-preset-es2015": "^6.6.0",
     "babel-preset-react": "^6.5.0",
@@ -26,6 +30,7 @@
     "enzyme": "^2.2.0",
     "expect": "^1.18.0",
     "file-loader": "^0.8.5",
+    "gh-pages": "^0.11.0",
     "hjs-webpack": "^8.1.0",
     "jasmine-core": "^2.4.1",
     "json-loader": "^0.5.4",

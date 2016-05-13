@@ -49,7 +49,17 @@ This app uses the following technologies:
 * [react-router](https://github.com/reactjs/react-router)
 * [Google Maps API](https://developers.google.com/maps/)
 * [google-maps-react npm](https://github.com/fullstackreact/google-maps-react)
+* [enzyme](https://github.com/airbnb/enzyme)
+* [chai](http://chaijs.com)
 * And much much more
+
+### Running the tests
+
+The application is built using tests, including the fantastic [enzyme](https://github.com/airbnb/enzyme) and [chai](http://chaijs.com) libraries. To run the tests, use the `npm` test script:
+
+```shell
+npm run test
+```
 
 Check out the blog post for more information on how this app was built and a complete tutorial on using React to build your own apps.
 
