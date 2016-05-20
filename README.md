@@ -2,7 +2,7 @@
   <img src="resources/readme/fullstackreact-yelp-clone-tutorial.png" alt="Fullstack React Yelp Clone Tutorial" />
 </p>
 
-# React Tutorial: Build a Yelp Clone [![Dolpins](https://cdn.rawgit.com/fullstackreact/react-yelp-clone/master/resources/readme/dolphins-badge-ff00ff.svg)](https://www.fullstackreact.com)
+# React Tutorial: Build a Yelp Clone [![Dolpins](https://cdn.rawgit.com/fullstackreact/google-maps-react/master/resources/readme/dolphins-badge-ff00ff.svg)](https://www.fullstackreact.com)
 
 > _tl;dr_ - This is the code for our blog post which will guide you through building a full React app, even with little to no experience in the framework. We're going build a Yelp clone in React
 
