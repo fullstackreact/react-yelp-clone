@@ -47,7 +47,7 @@ First, clone the repository:
 
 ## Configuring the Application
 
-This app uses [dotenv](https://github.com/bkeepers/dotenv) for configuration. In order to configure the application for your own api access, grab an api token from google at [https://developers.google.com/maps/documentation/javascript/](https://developers.google.com/maps/documentation/javascript/) and set it in a file called `.env` at the root for a key called `__GAPI_KEY__`.
+This app uses [dotenv](https://github.com/bkeepers/dotenv) for configuration. In order to configure the application for your own api access, [grab an api token from Google here](https://developers.google.com/maps/documentation/javascript/) and set it in a file called `.env` at the root for a key called `__GAPI_KEY__`.
 For instance, say that your gapi key is: `abc123`. Your `.env` file should look like:
 
 ```bash
