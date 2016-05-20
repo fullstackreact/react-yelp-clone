@@ -32,17 +32,17 @@ We'll be tying in a lot of different pieces of [React](https://facebook.github.i
 First, clone the repository:
 
 ```bash
-    git clone https://github.com/fullstackreact/react-yelp-clone.git react-yelp-clone
-    cd react-yelp-clone
+git clone https://github.com/fullstackreact/react-yelp-clone.git react-yelp-clone
+cd react-yelp-clone
 
-    # install the dependencies
-    npm install
+# install the dependencies
+npm install
 
-    # copy configuration (see below)
-    cp .env.example .env
+# copy configuration (see below)
+cp .env.example .env
 
-    # start the server
-    npm start
+# start the server
+npm start
 ```
 
 ## Configuring the Application
