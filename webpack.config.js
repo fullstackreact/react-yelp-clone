@@ -113,10 +113,11 @@ config.resolve.alias = {
 // Testing
 if (isTest) {
   config.externals = {
+    'react/addons': true,
     'react/lib/ReactContext': true,
     'react/lib/ExecutionEnvironment': true,
   }
-  config.module.noParse = /\/sinon\.js/;
+  config.module.noParse = /[/\\]sinon\.js/;
   config.resolve.alias['sinon'] = 'sinon/pkg/sinon';
 
   config.plugins = config.plugins.filter(p => {
