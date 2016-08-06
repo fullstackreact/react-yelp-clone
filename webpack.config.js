@@ -18,7 +18,7 @@ const modules = join(root, 'node_modules');
 const dest    = join(root, 'dist');
 
 var config = getConfig({
-  isDev: isDev,
+  isDev: isDev || isTest,
   in: join(src, 'app.js'),
   out: dest,
   html: function (context) {
